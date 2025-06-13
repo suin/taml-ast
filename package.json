@@ -1,0 +1,54 @@
+{
+  "name": "@taml/ast",
+  "version": "0.0.0-alpha.2",
+  "description": "Abstract Syntax Tree types and utilities for TAML (Terminal ANSI Markup Language)",
+  "keywords": [
+    "taml",
+    "ast",
+    "terminal-ansi-markup-language",
+    "tree",
+    "visitor",
+    "traversal",
+    "parser"
+  ],
+  "homepage": "https://github.com/suin/taml-ast#readme",
+  "bugs": {
+    "url": "https://github.com/suin/taml-ast/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suin/taml-ast.git"
+  },
+  "license": "MIT",
+  "author": "suin",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.js",
+      "require": "./js/index.js"
+    }
+  },
+  "main": "./js/index.js",
+  "module": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "files": [
+    "js/**/*",
+    "ts/**/*",
+    "!ts/**/*.test.*",
+    "!ts/**/*.spec.*",
+    "!ts/**/__tests__"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf js *.tsbuildinfo",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "latest",
+    "@tsconfig/node22": "latest",
+    "@tsconfig/strictest": "latest",
+    "@types/bun": "latest",
+    "typescript": "latest"
+  }
+}
