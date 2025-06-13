@@ -1,6 +1,6 @@
 {
   "name": "@taml/ast",
-  "version": "0.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Abstract Syntax Tree types and utilities for TAML (Terminal ANSI Markup Language)",
   "keywords": [
     "taml",
