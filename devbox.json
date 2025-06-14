@@ -7,12 +7,12 @@
       "ci": [
         "bunx sort-package-json -c",
         "biome ci",
-        "bun install",
+        "bun install --frozen-lockfile",
         "bun run build",
         "bun run test"
       ],
       "publish": [
-        "bun install",
+        "bun install --frozen-lockfile",
         "bun run build",
         "npm publish --provenance --access public"
       ]
